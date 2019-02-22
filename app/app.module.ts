@@ -4,11 +4,16 @@ import {CommonModule} from '@angular/common';
 
 import { AppComponent } from './app.component';
 
+import { PassengerDashboardModule } from './passenger-dashboard/passegner-dashboard.module';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    // angular modules
     BrowserModule,
-    CommonModule
+    CommonModule,
+    // custom modules
+    PassengerDashboardModule
   ],
   bootstrap: [AppComponent]
 })
