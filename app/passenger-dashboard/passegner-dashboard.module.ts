@@ -1,15 +1,16 @@
-import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { HttpModule } from "@angular/http";
 
 // containers
-import { PassengerDashboardComponent } from './containers/passenger-dashboard/passenger-dashboard.component';
+import { PassengerDashboardComponent } from "./containers/passenger-dashboard/passenger-dashboard.component";
 
 // components
-import { PassengerCountComponent } from './components/passenger-count/passenger-count.component';
-import { PassengerDetailComponent } from './components/passenger-detail/passenger-detail.component';
+import { PassengerCountComponent } from "./components/passenger-count/passenger-count.component";
+import { PassengerDetailComponent } from "./components/passenger-detail/passenger-detail.component";
 
 // services
-import { PassengerDashboardService } from './passenger-dashboard.service'
+import { PassengerDashboardService } from "./passenger-dashboard.service";
 
 @NgModule({
     declarations:[
@@ -18,7 +19,8 @@ import { PassengerDashboardService } from './passenger-dashboard.service'
         PassengerDetailComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        HttpModule
     ],
     exports: [
         PassengerDashboardComponent

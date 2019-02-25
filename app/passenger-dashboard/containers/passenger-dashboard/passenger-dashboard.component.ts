@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { PassengerDashboardService } from "../../passenger-dashboard.service"
+import { PassengerDashboardService } from "../../passenger-dashboard.service";
 import { Passenger } from "../../models/passenger.interface";
 
 

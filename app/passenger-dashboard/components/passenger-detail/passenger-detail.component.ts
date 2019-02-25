@@ -1,5 +1,5 @@
-import {Component, OnInit, OnChanges, Input, Output, EventEmitter} from '@angular/core'
-import { Passenger } from '../../models/passenger.interface';
+import {Component, OnInit, OnChanges, Input, Output, EventEmitter} from "@angular/core";
+import { Passenger } from "../../models/passenger.interface";
 
 @Component({
     selector: 'passenger-detail',
