@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { PassengerDashboardService } from "../../passenger-dashboard.service";
 import { Passenger } from "../../models/passenger.interface";
+import { timingSafeEqual } from "crypto";
 
 
 @Component({
@@ -20,7 +21,7 @@ export class PassengerDashboardComponent implements OnInit{
   constructor(private passengerService: PassengerDashboardService){}
 
   ngOnInit(){
-    this.passengers = this.passengerService.getPassengers();
+    this.passengerService.getPassengers().subscribe((data: Passenger[]) => this.passengers = data);
   }
 
   handleRemove(event: Passenger){
