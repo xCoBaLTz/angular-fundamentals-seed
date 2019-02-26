@@ -3,7 +3,6 @@ import { CommonModule } from "@angular/common";
 import { HttpModule } from "@angular/http";
 import { FormsModule } from "@angular/forms";
 
-
 // containers
 import { PassengerDashboardComponent } from "./containers/passenger-dashboard/passenger-dashboard.component";
 import { PassengerViewerComponent } from "./containers/passenger-viewer/passenger-viewer.component";
